@@ -5,10 +5,11 @@ class trinagle {
 		public function startTrinagle()
 		{
 			$methodService = $_SERVER['REQUEST_METHOD'];
-
-			if ($methodService== "GET") {
+			if ($methodService== "GET" && isset($_GET["c"])) {
 				$result = $this->validateTriangle();
 				echo json_encode($result);
+			} else {
+				echo "Hola. Indica los parámetros adecuados. Deben ser 3 enteros. Por ejemplo: [URL]/3/6/8"
 			}
 			
 			
