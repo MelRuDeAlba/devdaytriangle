@@ -15,9 +15,9 @@ class trinagle {
 		}
 
 		private function validateTriangle(){
-			$a = 1;
-			$b = 2;
-			$c = 3;
+			$a = $_GET["a"];
+			$b = $_GET["b"];
+			$c = $_GET["c"];
 			if (($a+$b > $c) && ($b+$c > $a) && ($a+$c > $b)) {
 				$response = array(
         			'Resultado' => 'Si es triangulo.'
