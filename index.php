@@ -9,7 +9,7 @@ class trinagle {
 				$result = $this->validateTriangle();
 				echo json_encode($result);
 			} else {
-				echo "Hola. Indica los parámetros adecuados. Deben ser 3 enteros. Por ejemplo: [URL]/3/6/8"
+				echo "Hola. Indica los parámetros adecuados. Deben ser 3 enteros. Por ejemplo: [URL]/3/6/8";
 			}
 			
 			
