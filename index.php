@@ -8,8 +8,8 @@
 			$methodService = $_SERVER['REQUEST_METHOD'];
 
 			if ($methodService== "GET") {
-				$data = explode('/',$_SERVER['REQUEST_URI']);
-				 $this->validateTriangle($data);
+				
+				 $this->validateTriangle($_SERVER['REQUEST_URI']);
 			}
 			
 			
